@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Node Authentication</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 80px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <div class="page-header text-center">
+            <h1><span class="fa fa-user"></span> Profile Page</h1>
+            <a href="/logout" class="btn btn-danger">Logout</a>
+        </div>
+        <div class="container">
+            <div class="row text-center">
+                <!-- GOOGLE INFORMATION -->
+                <div class="col-sm-6">
+                    <div class="well">
+                        <p>
+                            <img src="<%=pic%>" width="100" height="100" alt="profile pic" style="border-radius: 50%;">
+                            <hr>
+                            <h3 class="text-danger"><span class="fa fa-google-plus"></span> Google</h3>
+                            <hr>
+                            <span class="fa fa-user"></span><strong> Name</strong>: <%= name %>
+                            <hr>
+                            <span class="fa fa-envelope"></span><strong> Email</strong>: <%= email %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
